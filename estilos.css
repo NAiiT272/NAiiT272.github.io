@@ -1,0 +1,318 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.home{
+    background: rgb(255, 255, 255);
+    height: 60px;
+    position:fixed;
+    z-index:1000;
+    top:0;
+    transition: background .15s;
+    left:0;
+    width:100%;
+    box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
+}
+
+.logo{
+    position: absolute;
+    width: 50px;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+header ul{
+    position: absolute;
+    list-style: none;
+    margin-left: 280px;
+    margin-top: 17px;
+}
+
+header ul li{
+    display: inline-block;
+    margin-left: 80px;
+    font-family: Lucida Sans Unicode;
+}
+
+header ul.sub-menus{
+	height: auto;
+	width: 120px;
+	background: #FFFFFF;
+	position: absolute;
+	z-index: 99;
+	display:none;
+    margin-left: -25px;
+    
+}
+
+header a.dropdown-arrow:after {
+	content: "\25BE";
+	margin-left: 5px;
+}
+
+header ul.sub-menus li {
+	display: block;
+	width: 100px;
+    margin-left: 10px;
+}
+
+header ul.sub-menus a {
+	color: #000000;
+	font-size: 16px;
+}
+
+header li:hover > .sub-menus {
+    display: block;
+}
+
+header ul.sub-menus a:hover{
+	background: #FFFFFF;
+	color: #0560E8;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+a:hover{
+    color: rgb(5, 96, 232);
+    transition: all .3s;
+}
+
+#botonbusq{
+    background: rgb(8, 0, 162);
+    color: aliceblue;
+    border: 0;
+    border-radius: 50px;
+    display: inline-block;
+    text-align: center;
+    line-height: 30px;
+    padding: 0 15px;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 1120px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 200px;
+}
+
+.contenido{
+    height: 700px;
+    text-align: center;  
+    background-image: url('img/Antenas.jpeg');
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;	
+}
+
+#titulocentral{
+    position: absolute;
+    width: 600px;
+    margin-left: 390px;
+    margin-top: 300px;
+    text-align: center;
+}
+
+h1{
+    font-family: Lucida Sans Unicode;
+    color: white;
+    font-size:50px;
+}
+
+.subtitulo{
+    font-family: Lucida Sans Unicode;
+    color: white;
+    text-align: center;
+    padding: 0;
+    margin:30px;
+    font-size: 25px;
+    margin-top: 7px;
+}
+
+#botoncentral{
+    background: rgb(8, 0, 162);
+    color: aliceblue;
+    width:120px;
+    height:40px;
+    border-radius: 50px;
+    line-height: 30px;
+    padding: 15px;
+    margin-top: 40px;
+    cursor: pointer;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+p{
+    font-family: Lucida Sans Unicode;
+    color: white;
+    font-size: 16px;
+    text-align: justify;
+    padding: 15px;
+}
+
+footer{
+background-color: rgb(8, 31, 92);
+color: white;
+font-family: Lucida Sans Unicode;
+padding: 10px;
+text-align: center;
+}
+
+#span{
+    color: silver;
+}
+
+#botonbusq:hover{
+    color: rgb(182, 190, 202);
+    transition: all .3s;
+}
+
+#categorias{
+    text-align: center;
+    padding: 0;
+    background-color: rgba(255, 255, 255, 0.792);
+}
+  
+.tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color:#ddd
+}
+  
+.tarjeta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 100px;
+    margin: 10px;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: #000000 solid;
+    background-color: #FFFFFF;
+}
+  
+.tarjeta:hover {
+    background-color: #b1d7ff;
+}
+  
+#galeria {
+    padding: 20px;
+}
+
+  .banner{
+    width: 100%;
+    height: 500px;
+    margin: auto;
+    background-size: 100% 100%;
+    animation: banner 10s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes banner{
+    0%, 30%{
+      background-image: url(img/antenas2.jpg);
+    }
+    35%, 65%{
+        background-image: url(img/fibraoptica.jpg);
+    }
+    70%, 100%{
+        background-image: url(img/telefono.jpg);
+    }
+}
+
+#mapa{
+    position: absolute;
+    margin: 25px;
+}
+
+.descripcion{
+    position: absolute;
+    background-color: #ddd;
+    width: 657px;
+    color: #000000;
+    margin-left: 650px;
+    margin-top: 25px;
+}
+
+.titulo{
+    font-size: 50px;
+    font-style:oblique;
+    font-weight: bold;
+    color: #000000;
+    margin-top: 25px;
+    margin-bottom: 20px;
+  }
+  
+.empresainfo {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #ffffff;
+    margin-bottom: 10px;
+    text-align: justify;
+    background-color: #181818;
+  }
+
+ #boton1{
+    background: rgb(8, 0, 162);
+    color: aliceblue;
+    border: 0;
+    border-radius: 50px;
+    display: inline-block;
+    text-align: center;
+    line-height: 30px;
+    padding: 0 15px;
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 1050px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 200px;
+ } 
+
+ #boton2{
+    background: rgb(8, 0, 162);
+    color: aliceblue;
+    border: 0;
+    border-radius: 50px;
+    display: inline-block;
+    text-align: center;
+    line-height: 30px;
+    padding: 0 15px;
+    position: absolute;
+    margin-top: 380px;
+    margin-left: 1050px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 200px;
+ } 
+
+ #logofacultad{
+    height: 200px;
+    width: 250px;
+    margin-left: 710px;
+    margin-top: 100px;
+    position: absolute;
+}
+
+#logouc{
+    height: 170px;
+    width: 170px;
+    margin-left: 780px;
+    margin-top: 310px;
+    position: absolute;
+}
+
+h3{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#titemp{
+    position: absolute;
+    margin-top: 9px;
+    margin-left: 70px;
+}
